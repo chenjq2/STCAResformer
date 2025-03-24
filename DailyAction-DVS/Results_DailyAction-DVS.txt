@@ -1,0 +1,30 @@
+Namespace(model='SEWResNet', dataset='DailyAction_DVS', num_classes=12, data_path='/data/cjq/RS_LIF/Datasets/DailyAction_DVS', device='cuda:1', batch_size=16, workers=4, print_freq=256, output
+_dir='/data/cjq/SpikingTransformer/dailyAction/logs/', resume='', sync_bn=False, test_only=False, amp=True, world_size=1, dist_url='env://', tb=True, T=16, opt='adamw', opt_eps=1e-08, opt_beta
+s=None, weight_decay=0.06, momentum=0.9, connect_f='ADD', T_train=None, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, lr_cycle_mul=1.0, lr_cycle_limit=1, warmup
+_lr=1e-05, min_lr=1e-05, epochs=1024, epoch_repeats=0.0, start_epoch=0, decay_epochs=2, warmup_epochs=1, cooldown_epochs=1, patience_epochs=1, decay_rate=0.1, smoothing=0.1, mixup=0.5, cutmix=
+0.0, cutmix_minmax=None, mixup_prob=0.5, mixup_switch_prob=0.5, mixup_mode='batch', mixup_off_epoch=0, distributed=False)
+
+number of params: 630,508
+
+Epoch: [1024]  [ 0/72]  eta: 0:01:00  lr: 1e-05  img/s: 35.7160190467371  loss: 0.5380 (0.5380)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8412  data: 0.3932  max mem: 0
+Epoch: [1024] Total time: 0:00:27
+Test:  [ 0/19]  eta: 0:00:08  loss: 0.2426 (0.2426)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.4568  data: 0.3817  max mem: 0
+Test: Total time: 0:00:01
+ * Acc@1 = 96.19377162629758, Acc@5 = 99.30795847750865, loss = 0.22830690443515778
+Namespace(model='SEWResNet', dataset='DailyAction_DVS', num_classes=12, data_path='/data/cjq/RS_LIF/Datasets/DailyAction_DVS', device='cuda:1', batch_size=16, workers=4, print_freq=256, output
+_dir='/data/cjq/SpikingTransformer/dailyAction/logs/', resume='', sync_bn=False, test_only=False, amp=True, world_size=1, dist_url='env://', tb=True, T=16, opt='adamw', opt_eps=1e-08, opt_beta
+s=None, weight_decay=0.06, momentum=0.9, connect_f='ADD', T_train=None, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, lr_cycle_mul=1.0, lr_cycle_limit=1, warmup
+_lr=1e-05, min_lr=1e-05, epochs=1024, epoch_repeats=0.0, start_epoch=0, decay_epochs=2, warmup_epochs=1, cooldown_epochs=1, patience_epochs=1, decay_rate=0.1, smoothing=0.1, mixup=0.5, cutmix=
+0.0, cutmix_minmax=None, mixup_prob=0.5, mixup_switch_prob=0.5, mixup_mode='batch', mixup_off_epoch=0, distributed=False)
+Training time 7:57:22 max_test_acc1 97.92387543252595 test_acc5_at_max_test_acc1 99.30795847750865
+/data/cjq/SpikingTransformer/dailyAction/logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+
+SSA info: 
+ {'depth': 2, 'Nheads': 8, 'embSize': 256, 'patchSize': 16, 'Tsteps': 8}
+Firing rate of SSA projection layers:
+[0.11009494881880912, 0.0694345424049779]
+Operations: 0.07G MACs, 0.04G ACs
+Total Energy: 0.35mJ
+Nops:  ['748029452.0 Ops', '60150645.60034602 Ops', '82052620.0 Ops']
+Nparams:  630508
+Time cost: 0.04841360648473104 min
