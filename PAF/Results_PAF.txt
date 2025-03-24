@@ -1,0 +1,25 @@
+Namespace(model='SEWResNet', dataset='PAF', num_classes=10, data_path='/data/cjq/RS_LIF/Datasets/ActionRecognition/', device='cuda:0', batch_size=12, workers=4, print_freq=256, output_dir='/data/cjq/SpikingTransformer/PAF/logs/', resume='', sync_bn=False, test_only=False, amp=True, world_size=1, dist_url='env://', tb=True, T=8, opt='adamw', opt_eps=1e-08, opt_betas=None, weight_decay=0.06, momentum=0.9, connect_f='ADD', T_train=None, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, lr_cycle_mul=1.0, lr_cycle_limit=1, warmup_lr=1e-05, min_lr=1e-05, epochs=1024, epoch_repeats=0.0, start_epoch=0, decay_epochs=2, warmup_epochs=1, cooldown_epochs=1, patience_epochs=1, decay_rate=0.1, smoothing=0.1, mixup=0.5, cutmix=0.0, cutmix_minmax=None, mixup_prob=0.5, mixup_switch_prob=0.5, mixup_mode='batch', mixup_off_epoch=0, distributed=False)
+
+Epoch: [1024]  [ 0/19]  eta: 0:00:14  lr: 1e-05  img/s: 110.73436503082331  loss: 0.5077 (0.5077)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.7582  data: 0.6498  max mem: 27
+78
+Epoch: [1024] Total time: 0:00:02
+Test:  [0/5]  eta: 0:00:03  loss: 0.1410 (0.1410)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.6350  data: 0.6019  max mem: 2778
+Test: Total time: 0:00:00
+ * Acc@1 = 98.27586154280037, Acc@5 = 100.0, loss = 0.2412772759795189
+Namespace(model='SEWResNet', dataset='PAF', num_classes=10, data_path='/data/cjq/RS_LIF/Datasets/ActionRecognition/', device='cuda:0', batch_size=12, workers=4, print_freq=256, output_dir='/da
+ta/cjq/SpikingTransformer/PAF/logs/', resume='', sync_bn=False, test_only=False, amp=True, world_size=1, dist_url='env://', tb=True, T=8, opt='adamw', opt_eps=1e-08, opt_betas=None, weight_dec
+ay=0.06, momentum=0.9, connect_f='ADD', T_train=None, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, lr_cycle_mul=1.0, lr_cycle_limit=1, warmup_lr=1e-05, min_lr=
+1e-05, epochs=1024, epoch_repeats=0.0, start_epoch=0, decay_epochs=2, warmup_epochs=1, cooldown_epochs=1, patience_epochs=1, decay_rate=0.1, smoothing=0.1, mixup=0.5, cutmix=0.0, cutmix_minmax
+=None, mixup_prob=0.5, mixup_switch_prob=0.5, mixup_mode='batch', mixup_off_epoch=0, distributed=False)
+Training time 0:59:08 max_test_acc1 98.27586154280037 test_acc5_at_max_test_acc1 98.27586154280037
+/data/cjq/SpikingTransformer/PAF/logs/SEWResNet_b12_T8_wd0.06_adamw_cnf_ADD/lr0.001
+
+SSA info:
+ {'depth': 2, 'Nheads': 8, 'embSize': 256, 'patchSize': 16, 'Tsteps': 8}
+Firing rate of SSA projection layers:
+[0.05236203595995903, 0.05045400559902191]
+Operations: 0.31G MACs, 0.35G ACs
+Total Energy: 1.72mJ
+Nops:  ['4040185098.0 Ops', '355483569.26094526 Ops', '382529802.0 Ops']
+Nparams:  514314
+Time cost: 0.023593262831370036 min
