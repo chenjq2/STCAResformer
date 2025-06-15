@@ -1,7 +1,7 @@
 # STCAResformer
 This is the source code for STCAResformer
 
-You can use 'Tensorboard' to watch the experiment results directly. The results are shown in 'PAF/logs' and 'DailyAction-DVS/logs', you can use the 'tensorboard' to look at the data visualization.
+You can use "Tensorboard" to watch the experiment results directly. The results are shown in 'PAF/logs' and 'DailyAction-DVS/logs', you can use the 'tensorboard' to look at the data visualization.
 
 Example:
 
