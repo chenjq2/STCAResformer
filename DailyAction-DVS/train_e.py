@@ -558,7 +558,9 @@ def main(args):
         lr_scheduler.step(epoch + 1)
 
         classes = ["bend", "climb", "fall down", "get up", "jump", "lie down", "lift", "pick up", "run", "sit down", "stand up", "walk"]
+        
         test_loss, test_acc1, test_acc5 = evaluate(model, criterion, data_loader_test, device=device, header='Test:', classes=classes)
+        
         if te_tb_writer is not None:
             if utils.is_main_process():
 
